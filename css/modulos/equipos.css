@@ -1,0 +1,100 @@
+
+.equipo {
+    
+    width: 100%;
+    text-align: center;
+  }
+  
+  .equipo-container {
+    padding-bottom: 3rem;
+    padding: var(--padding-container);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 800px;
+    gap: 1rem;
+    margin:0 auto;
+  }
+  
+  .equipo__titulo {
+    
+    font-size: var(--font-size-big);
+    color: var(--font-text-color);
+    text-shadow: var(--text-shadow);
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  .underline{
+    color: var(--secondary-color);
+    font-size: 6rem;
+    display: inline-block;
+    position: relative;
+  }
+  .underline::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+  }
+  .underline:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  
+  .equipo__miembro-container {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 300px;
+  }
+  
+  .equipo__miembro-foto {
+    filter: grayscale(1);
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    transition: filter .75s ease;
+  }
+  
+  .equipo__miembro-container:hover .equipo__miembro-foto {
+    filter: none;
+  }
+  
+ 
+  
+  .equipo__miembro-nombre {
+    font-size: var(--font-size-medium);
+  }
+  
+  .equipo__miembro-subtitle {
+    font-size: var(--font-size-small);
+  }
+  
+  @media (min-width: 854px) {
+    .equipo-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .equipo__miembro-foto-hover {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity .30s ease;
+  }

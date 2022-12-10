@@ -1,0 +1,20 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-theme-color: #2b303a;
+    --primary-color: #e7e7e7;
+    --secondary-color: #5bc0eb;
+    --font-text-color: #fff;
+    --shadow-color:var(--font-text-color);
+    --font-cont:#ffffff09;
+    --font-family: monospace;
+    --box-shadow: 0px .5px 5px var(--shadow-color);
+    --box-shadow-hover: -5px 5px 10px var(--shadow-color);
+    --text-shadow: -3px 3px 0px var(--shadow-color);
+    --font-size-big: 3rem;
+    --font-size-medium: 1.1rem;
+    --font-size-small: .9rem;
+    --padding-container: 3rem 2rem 3rem 2rem;
+    --padding-buttons: 0.5em 1em;
+    --gap-container: 1rem;
+    --primary-border-radius: 0.5rem;
+}
