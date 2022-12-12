@@ -16,13 +16,48 @@
 </head>
 
 <body>
-    <header id="main-header">
+
+    <header class="header">
+        <nav class="nav">
+            <div class="container f-elements f-elements--header">
+                <a href="#" >
+                    <img src="./images/assets/ico_shuffle_143 (1).ico" alt="Grupo2" width="70" height="70" class="nav__logo">
+                </a>
+                <div class="icon icon--open" id="icon-open">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <ul class="list list--header f-elements f-elements--center f-elements--responsive gap-md">
+                    <li>
+                        <a href="#" class="list__link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#nosotros" class="list__link">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#galeria" class="list__link">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#equipo" class="list__link">Equipo</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" class="list__link">Contacto</a>
+                    </li>
+                    <li class="icon icon--close" id="icon-close">
+                        <i class="bi bi-x-circle"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <header id="main-header">
         <div class="container">
             <h1>Proyectos Web</h1>
             <p>Innovación, Investigación, Arte y Diseño</p>
         </div>
-    </header><!-- main-header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    </header>main-header -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Ideas Digitales</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,7 +88,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -382,7 +417,7 @@
 
 
     <!-- Gallery -->
-    <section class="padded">
+    <section class="padded" id="galeria">
         <div class="container">
             <div class="container">
                 <div class="row">
@@ -468,7 +503,7 @@
   <!-- Gallery -->
 
 
-    <footer class="text-white text-center text-lg-start bg-dark">
+    <footer class="text-white text-center text-lg-start bg-dark" id="contacto">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->

@@ -1,3 +1,121 @@
+.icons {
+  display: flex;
+  font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  .icons--open, .icons--close {
+    display: none;
+  }
+}
+.icons--close {
+  position: absolute;
+  top: calc(var(--padding-nav) + 0.25rem);
+  right: var(--padding-container);
+  transition: top 0.25s;
+}
+
+.gap-md {
+  gap: var(--padding-section);
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.f-elements {
+  display: flex;
+}
+.f-elements--header {
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.f-elements--center {
+  align-items: center;
+  justify-content: center;
+}
+.f-elements--responsive {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .f-elements--responsive {
+    flex-direction: row;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list--header {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-theme-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+@media (min-width: 768px) {
+  .list--header {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+}
+.list--header-show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.list__link {
+  display: flex;
+  background-color: var(--secondary-theme-color);
+  border-radius: var(--primary-border-radius);
+  color: var(--primary-text-color);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.25em 1em;
+  transition: background-color 0.25s, color 0.25s;
+}
+.list__link:hover {
+  background-color: var(--primary-highlight-color);
+  color: var(--reverse-primary-text-color);
+}
+
+.header {
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-theme-color);
+  box-shadow: 0 0 0.125rem var(--primary-shadow-color);
+}
+
+.nav {
+  --padding-nav: 0.75rem;
+  padding-top: var(--padding-nav);
+  padding-bottom: var(--padding-nav);
+  transition: padding 0.25s;
+}
+.nav--scroll {
+  --padding-nav: 0.5rem;
+}
+.nav__logo {
+  display: flex;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
 .portfolio-menu {
   text-align: center;
 }

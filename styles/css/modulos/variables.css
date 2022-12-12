@@ -1,0 +1,43 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-theme-color: #2b303a;
+    --secondary-theme-color: #282c34;
+    --primary-text-color: #fff;
+    --secondary-text-color: #888;
+    --reverse-primary-text-color: #fff;
+    --primary-shadow-color: #ffffff80;
+    --secondary-shadow-color: #ffffff40;
+    --reverse-primary-shadow-color: #00000080;
+    --reverse-secondary-shadow-color: #00000040;
+    --primary-color: #e7e7e7;
+    --secondary-color: #5bc0eb;
+    --font-text-color: #fff;
+    --primary-highlight-color: #135fd1e3;
+    --secondary-highlight-color: gold;
+    --primary-button-color: #61dafb;
+    --secondary-button-color: gold;
+    --shadow-color:var(--font-text-color);
+    --font-cont:#ffffff09;
+    --font-family: monospace;
+    --box-shadow: 0px .5px 5px var(--shadow-color);
+    --box-shadow-hover: -5px 5px 10px var(--shadow-color);
+    --text-shadow: -3px 3px 0px var(--shadow-color);
+    --font-size-big: 3rem;
+    --font-size-medium: 1.1rem;
+    --font-size-small: .9rem;
+    --padding-container: 3rem 2rem 3rem 2rem;
+    --padding-buttons: 0.5em 1em;
+    --gap-container: 1rem;
+    --padding-section: 1.5rem;
+    --all-transitions: all 0.25s;
+    --max-width-container: 512px;
+    --primary-border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    :root {
+      --max-width-container: 1024px;
+      --padding-section: 4rem;
+      --padding-container: 0.75rem;
+    }
+  }
