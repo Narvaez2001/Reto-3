@@ -1,0 +1,19 @@
+.portfolio-menu {
+  text-align: center;
+}
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.portfolio-item .item {
+  /*width:303px;*/
+  float: left;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=fe.css.map */
