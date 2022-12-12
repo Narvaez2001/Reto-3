@@ -35,9 +35,9 @@
 }
 
 @media (min-width: 768px) {
-    :root {
-      --max-width-container: 1024px;
-      --padding-section: 4rem;
-      --padding-container: 0.75rem;
-    }
+  :root {
+    --max-width-container: 1024px;
+    --padding-section: 4rem;
+    --padding-container: 0.75rem;
+  }
   }
