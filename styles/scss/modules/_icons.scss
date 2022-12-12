@@ -1,0 +1,23 @@
+.icons {
+    display: flex;
+    font-size: 1.75rem;
+    
+    
+    
+
+    &--open,
+    &--close {
+       @include desktop {
+        display: none;
+        // transform: scale(var(--scale-menu));
+      }
+    }
+
+&--close {
+    position: absolute;
+    top: calc(var(--padding-nav) + 0.25rem);
+    right: var(--padding-container);
+    transition: top 0.25s;  
+    // transform: scale(var(--scale-close));
+  }
+}

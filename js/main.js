@@ -1,3 +1,24 @@
+const nav = document.querySelector('nav')
+const iconOpen = document.getElementById('icon-open');
+const listheader = document.querySelector('.list--header');
+const iconClose = document.getElementById('icon-close');
+
+
+nav.addEventListener('scroll', () => {
+    nav.classList.toggle('nav--scroll', window.scrollY > 0)
+});
+
+console.log(iconOpen);
+
+iconOpen.addEventListener('click', () => {
+    listheader.classList.add('list--header-show')   
+});
+
+iconClose.addEventListener('click', () => {
+   listheader.classList.remove('list--header-show') 
+});
+
+
 $(function () {
 
     var fondoClaro = true
